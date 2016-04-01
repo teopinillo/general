@@ -1,0 +1,11 @@
+//creates a repunit number
+//ex. repunit (6) = 111111
+public static long repunit (int k){
+        int p=1;
+         long r = 0;
+         for (int i=0;i<k;i++){             
+             r = (p) + r;
+             p= p*10;
+         }
+         return r;
+    }
