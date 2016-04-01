@@ -1,0 +1,16 @@
+public static int gcd (int l, int r){
+        //find the biggest between l and r
+        if (r<l) {
+            int t = l;
+            l = r;
+            r = t;
+        }
+         int mod;
+         mod = (l % r);
+          while (mod!=0){
+              l = r;
+              r = mod;
+              mod = l % r;
+          }
+          return r;              
+    }
